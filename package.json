@@ -1,0 +1,27 @@
+{
+  "name": "dv",
+  "version": "0.0.1",
+  "description": "dv app",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mariano-altieri/dv.git"
+  },
+  "keywords": [
+    "dv",
+    "app",
+    "trip"
+  ],
+  "author": "dv team",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mariano-altieri/dv/issues"
+  },
+  "homepage": "https://github.com/mariano-altieri/dv#readme"
+}
