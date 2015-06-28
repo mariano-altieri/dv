@@ -7,7 +7,7 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "node --harmony ./server/dev.server.js"
   },
   "repository": {
     "type": "git",
@@ -19,9 +19,28 @@
     "trip"
   ],
   "author": "dv team",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/mariano-altieri/dv/issues"
   },
-  "homepage": "https://github.com/mariano-altieri/dv#readme"
+  "homepage": "https://github.com/mariano-altieri/dv#readme",
+  "devDependencies": {
+    "autoprefixer-loader": "^2.0.0",
+    "babel": "^5.6.14",
+    "babel-core": "^5.4.7",
+    "babel-eslint": "^3.1.9",
+    "babel-loader": "^5.1.2",
+    "css-loader": "^0.15.1",
+    "eslint-plugin-react": "^2.3.0",
+    "extract-text-webpack-plugin": "^0.8.2",
+    "node-sass": "^3.2.0",
+    "react-hot-loader": "^1.2.7",
+    "sass-loader": "^1.0.2",
+    "style-loader": "^0.12.3",
+    "webpack": "^1.9.6",
+    "webpack-dev-server": "^1.8.2"
+  },
+  "dependencies": {
+    "react": "^0.13.0"
+  }
 }
