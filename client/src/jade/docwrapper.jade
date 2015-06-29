@@ -9,9 +9,17 @@ html.no-js
         block title
     meta( name='description', content='' )
     meta( name='viewport', content='width=device-width, initial-scale=1' )
+    
     if GoogleFonts
         link( href='//fonts.googleapis.com/css?family=' + GoogleFonts, rel='stylesheet', type='text/css' )
-    link( rel='stylesheet', href='#{Statics}styles/main.css' )
-    script( src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" )
+    
+    if MUI
+        link( href='//cdn.muicss.com/mui-0.1.14/css/mui.min.css' rel='stylesheet' type='text/css' )
+        link( rel='stylesheet', href='#{Statics}styles/mui.css' )
+    else
+        link( rel='stylesheet', href='#{Statics}styles/main.css' )
+        script( src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" )
+            
+    
   body
     block content

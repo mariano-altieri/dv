@@ -1,0 +1,46 @@
+$base-font-family: 'Roboto', sans-serif;
+$base-font-size: 16px;
+
+$colors: (
+    50: #E3F2FD,
+    100: #BBDEFB,
+    200: #90CAF9,
+    300: #64B5F6,
+    400: #42A5F5,
+    500: #2196F3,
+    600: #1E88E5,
+    700: #1976D2,
+    800: #1565C0,
+    900: #0D47A1,
+    A100: #82B1FF,
+    A200: #448AFF,
+    A400: #2979FF,
+    A700: #2962FF,
+);
+
+$color-primary: map-get($colors, 500); 
+$color-secondary: map-get($colors, 50); 
+
+
+
+body {
+    background: {
+        color: transparent;
+        image: url("https://s-media-cache-ak0.pinimg.com/736x/7a/df/9f/7adf9f6c60b4878897469593073dfac3.jpg");
+        repeat: no-repeat;
+        position: center;
+        size: cover;
+    }
+    color: map-get($colors, 500); 
+    font: {
+        size: $base-font-size;
+        family: $base-font-family;
+        weight: 400;
+    }
+    height: 100vh;
+}
+
+// BTN
+.mui-btn-block {
+    width: 100%;
+}
