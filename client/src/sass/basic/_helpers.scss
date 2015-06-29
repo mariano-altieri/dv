@@ -1,0 +1,197 @@
+// -------------------------------------
+//   Variables
+// -------------------------------------
+
+
+// *************************************
+
+// Position
+%pull-left {
+    float: left;
+}
+
+%pull-right {
+    float: right;
+}
+
+%full-width,
+.full-width {
+    width: 100%;
+}
+
+%pos-right,
+.pos-right {
+    right: 0;
+}
+
+
+// Visibility
+%hidden,
+.hidden {
+    display: none;
+    visibility: hidden;
+}
+
+%show,
+.show {
+    display: block;
+    visibility: visible;
+}
+
+%no-overflow,
+.no-overflow {
+    overflow: hidden;
+}
+
+%pos--relative,
+.pos--relative {
+    position: relative;
+}
+
+
+// Blocks
+%block-align-center {
+    clear: both;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+%inline,
+.break {
+    display: inline-block;
+}
+
+
+// Text
+%text-center, 
+.text-center,
+.text--align-center {
+    text-align: center;
+}
+
+%text-left,
+.text-left { text-align: left;}
+
+%text-right,
+.text-right { text-align: right;}
+
+%text-uppercase,
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+%selection {
+    &::selection { background: transparent; }
+    &::-moz-selection { background: transparent; }
+}
+
+// Colors
+.c-primary {
+    color: $color-primary;
+}
+
+.c-secondary {
+    color: $color-secondary;    
+}
+
+// Margin and padding
+%no-margin,
+.no-margin {
+    margin: 0 0 0 0;
+}
+
+%no-padding,
+.no-padding {
+    padding: 0 0 0 0;
+}
+
+%no-padding-left,
+.no-padding-left {
+    padding-left: 0;
+}
+
+%no-padding-right,
+.no-padding-right {
+    padding-right: 0;
+}
+
+%m-top-5,
+.m-top-5 {
+    margin-top: 5px;
+}
+
+%m-top-20,
+.m-top-20 {
+    margin-top: $space-small;
+}
+
+%m-top-29,
+.m-top-29 {
+    margin-top: 29px;
+}
+
+%m-top-40,
+.m-top-40 {
+    margin-top: $space-medium;
+}
+
+%m-top-60,
+.m-top-60 {
+    margin-top: $space-large;
+}
+
+%p-top-20,
+.p-top-20 {
+    padding-top: $space-small;
+}
+
+%p-top-40,
+.p-top-40 {
+    padding-top: $space-medium;
+}
+
+%p-top-60,
+.p-top-60 {
+    padding-top: $space-large;
+}
+
+%b-bottom-none,
+.b-bottom-none {
+    border-bottom: none;
+}
+
+// Clearfix
+%clearfix {
+    &:before,
+    &:after {
+        content: " ";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+
+// GPU
+%composite-layer {
+    @include translate3d(0,0,0);
+}
+
+
+// Forms, inputs
+%placeholder {
+    &[placeholder]:focus:-moz-placeholder {
+        color: transparent;
+    }
+    &[placeholder]:focus:-ms-input-placeholder {
+        color: transparent;
+    }
+    &[placeholder]:focus::-webkit-input-placeholder {
+        color: transparent;
+    }
+    &[placeholder]:focus::-moz-placeholder {
+        color: transparent;
+    }
+}
