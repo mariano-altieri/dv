@@ -1,8 +1,9 @@
 body {
+  background-attachment: fixed;
   background-color: transparent;
   background-image: url("https://s-media-cache-ak0.pinimg.com/736x/7a/df/9f/7adf9f6c60b4878897469593073dfac3.jpg");
-  background-repeat: no-repeat;
   background-position: center;
+  background-repeat: repeat;
   background-size: cover;
   color: #2196F3;
   font-size: 16px;
@@ -11,8 +12,47 @@ body {
   height: 100vh;
 }
 
+.p-search main {
+  padding-bottom: 60px;
+}
+
 .mui-btn-block {
   width: 100%;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+}
+
+.list li {
+  background-color: #B2DFDB;
+  color: #004D40;
+  display: block;
+}
+
+.list li > h3 {
+  margin: 0;
+}
+
+.search {
+  background-color: #fff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: right;
+}
+
+.search input {
+  border-bottom-color: transparent;
+  display: inline-block;
+  width: auto;
+  min-width: 220px;
+}
+
+.search button {
+  margin: 0;
 }
 
 /*# sourceMappingURL=mui.css.map */
