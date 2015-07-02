@@ -1,0 +1,89 @@
+$base-font-family: 'Roboto', sans-serif;
+$base-font-size: 16px;
+
+$colors: (
+    50: #E3F2FD,
+    100: #BBDEFB,
+    200: #90CAF9,
+    300: #64B5F6,
+    400: #42A5F5,
+    500: #2196F3,
+    600: #1E88E5,
+    700: #1976D2,
+    800: #1565C0,
+    900: #0D47A1,
+    A100: #82B1FF,
+    A200: #448AFF,
+    A400: #2979FF,
+    A700: #2962FF,
+);
+
+$color-primary: map-get($colors, 500); 
+$color-secondary: map-get($colors, 50); 
+
+
+
+body {
+    background: {
+        attachment: fixed;
+        color: transparent;
+        image: url("https://s-media-cache-ak0.pinimg.com/736x/7a/df/9f/7adf9f6c60b4878897469593073dfac3.jpg");
+        position: center;
+        repeat: repeat;
+        size: cover;
+    }
+    color: map-get($colors, 500); 
+    font: {
+        size: $base-font-size;
+        family: $base-font-family;
+        weight: 400;
+    }
+    height: 100vh;
+}
+
+.p-search {
+    main {
+       padding-bottom: 60px;
+    }
+}
+
+// BTN
+.mui-btn-block {
+    width: 100%;
+}
+
+.list {
+    margin: 0;
+    padding: 0;
+
+    li {
+        background-color: #B2DFDB;
+        color: #004D40;
+        display: block;
+
+        > h3 {
+            margin: 0;
+        }
+    }
+
+}
+
+.search {
+    background-color: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: right;
+
+    input {
+        border-bottom-color: transparent;
+        display: inline-block;
+        width: auto;
+        min-width: 220px;
+    }
+
+    button {
+        margin: 0;
+    }
+}

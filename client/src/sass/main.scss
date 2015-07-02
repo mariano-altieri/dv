@@ -1,4 +1,25 @@
+// @import "settings";
+// @import "basic/**/*";
+// @import "layout/**/*";
+// @import "module/**/*";
+
+// CONFIG
 @import "settings";
-@import "basic/**/*";
-@import "layout/**/*";
-@import "module/**/*";
+
+// BASIC
+@import 
+    "basic/basic",
+    "basic/mixin",
+    "basic/helpers";
+
+// LAYOUT
+@import 
+    "layout/layout",
+    "layout/header",
+    "layout/main",
+    "layout/footer";
+
+// MODULE
+@import 
+    "module/buttons",
+    "module/search";

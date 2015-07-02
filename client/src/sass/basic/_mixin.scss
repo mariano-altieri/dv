@@ -1,0 +1,91 @@
+// -------------------------------------
+//   Variables
+// -------------------------------------
+
+
+// *************************************
+
+@mixin v-align(){
+  display: table;
+  width: 100%;
+
+  @content;
+  > * {
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+
+@mixin calc($property, $expression) {
+    #{$property}: -moz-calc(#{$expression});
+    #{$property}: -webkit-calc(#{$expression});
+    #{$property}: calc(#{$expression});
+}
+
+@mixin truncate($width) {
+    max-width: $width; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; 
+}
+
+@mixin break-point($point, $width: max) {
+    @media only screen and (#{$width}-width: $point) {
+        @content;
+    }
+}
+
+@mixin aspect-ratio($width, $height) {
+    position: relative;
+
+    &:before {
+        content: "";
+        display: block;
+        padding-top: ($height / $width) * 100%;
+        width: 100%;
+    }
+    > img {
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+}
+
+@mixin circular-image($size, $border-type: solid, $color: $color-secondary, $bg-color: transparent, $border-size: 1px) {
+    $size-height: $size - ($border-size * 2);
+    $size-font: $size/3;
+
+    text-align: center;    
+    width: torem($size); 
+
+    > figure {
+        @include border-radius(9999px);
+
+        background-color: $bg-color;
+        display: table-cell;
+        height: torem($size) + torem($border-size * 2);
+        overflow: hidden;
+        vertical-align: middle;
+        width: torem($size) + torem($border-size * 2);
+
+        &.no-image {
+            border: $border-size $color dashed;
+            background-color: $color-white-smoke;
+        }
+
+        &[class*="icon-"],
+        &[class*="circularImage-img-avatar"]{
+            border-color: $color;
+            border-style: $border-type;
+            border-width: $border-size;
+            font-size: $size-font;
+            //line-height: torem($size) + torem($border-size * 2);
+        }         
+    }
+
+    img {
+        max-width: 100%;
+        width: 100%;
+    }
+}

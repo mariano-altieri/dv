@@ -1,21 +1,51 @@
 <!doctype html>
-<html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>App - DV</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>App - DV</title>
 
-        <link rel="stylesheet" href="static/styles/main.css">
-
-        <!-- Replace it with bower -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-    </head>
-    <body>
-
-        <p>Hello world!</p>
-
-    </body>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    
+    <style type="text/css">
+      html, body { margin: 0; padding:0;}
+      body {
+      margin-bottom: 60px;
+      line-height: 100%;
+      font-family: helvetica, arial, sans-serif;
+      font-size: 13px;
+      background-color: #ffffff;
+      }
+      .device {
+      text-align: center;
+      margin-top: 60px;
+      background-image: url(http://responsinator.global.ssl.fastly.net/images/iphone-5-portrait.png);
+      background-repeat: no-repeat;
+      background-position: top center;
+      padding: 103px 0 117px 0px;
+      }
+      .content {
+      width: 320px;
+      height: 504px;
+      padding-top: 20px;
+      padding-bottom: 44px;
+      margin: 0 auto;
+      position: relative;
+      overflow: hidden;
+      }
+      iframe {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="device">
+        <div class="content">
+            <iframe src="html/index.html"></iframe>
+        </div>
+    </section>
+</body>
 </html>

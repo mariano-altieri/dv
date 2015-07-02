@@ -1,1 +1,22 @@
-$color-primary: #FFF;
+// COLORS
+$color-white: #fff;
+$color-black: #000;
+
+$color-primary: #a1d568; // verde - header
+$color-secondary: #f3f3f3; // gris - background
+$color-tertiary: #536a7a; // azul - botones
+
+// FONTS
+$base-font-size: 16px;
+$base-font-family: 'Roboto', sans-serif;
+
+// SPACING
+$space-small: 5px;
+$space-medium: 10px;
+$space-large: 20px;
+
+// LAYOUT
+$h-header: 60px;
+
+// BREAKPOINT
+$bp-medium: 650px;
