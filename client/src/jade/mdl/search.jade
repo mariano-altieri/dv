@@ -8,25 +8,7 @@ block body
 
     block content
 
-        header.mui-panel(role="banner")
-            h1.mui-text-center Search Page ;-)
+        header(role="banner")
+            h1 title
 
-        main.mui-container
-            ul.list
-             each val, key in values.length ? values : ['There are no values']
-                li.mui-panel
-                    h3= key
-                        |  - 
-                        strong= val 
-
-        footer.search
-            form
-                input(
-                    type="text" 
-                    class="mui-form-control" 
-                    placeholder="Search..."
-                    )
-                button(
-                    type="button" 
-                    class="mui-btn mui-btn-primary mui-btn-lg"
-                    ) GO
+        main
