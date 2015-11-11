@@ -1,0 +1,32 @@
+.f-left {
+  float: left;
+}
+
+.f-right {
+  float: right;
+}
+
+body {
+  background: #686F98;
+}
+
+.m-login {
+  padding-top: 40px;
+}
+
+.mdl-card {
+  margin-left: auto;
+  margin-bottom: 40px;
+  margin-right: auto;
+}
+
+.mdl-card-login {
+  max-width: 300px;
+}
+
+.mdl-card-login > .mdl-card__title {
+  background: #3F51B5;
+  color: #fff;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}

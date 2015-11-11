@@ -4,34 +4,59 @@ block title
     | #{PageTitle}
 
 block content
+    
+    main.m-login
 
-    header.mui-panel(role="banner")
-        h1.mui-text-center Hello world!
-
-    main.mui-container
-        br
-
-        form.mui-panel(
-            role="form"
-            action="#"
+        div(
+            class="mdl-card mdl-card-login mdl-shadow--8dp"
             )
-            leyend Welcome!
-                .mui-form-group
-                    input(
-                        type="text" 
-                        class="mui-form-control" 
-                        placeholder="User"
-                        )            
-
-                .mui-form-group
-                    input(
-                        type="password" 
-                        class="mui-form-control" 
-                        placeholder="Password"
+            div.mdl-card__title
+                h2.mdl-card__title-text Login
+            
+            div(
+                class="mdl-card__supporting-text mdl-grid"
+                )
+                form(action="#")
+                    div(
+                        class="mdl-textfield mdl-js-textfield mdl-cell mdl-cell--12-col"
                         )
-
-                button(
-                    type="button" 
-                    class="mui-text-center mui-btn mui-btn-primary mui-btn-lg mui-btn-block"
-                    onclick="location.href = 'search.html'"
-                    ) login
+                        input(
+                            class="mdl-textfield__input" 
+                            type="text" 
+                            id="username" 
+                            placeholder="Username"
+                            )
+                        label(
+                            class="mdl-textfield__label" 
+                            for="username"
+                            ) Username
+                    div(
+                        class="mdl-textfield mdl-js-textfield mdl-cell mdl-cell--12-col"
+                        )
+                        input(
+                            class="mdl-textfield__input" 
+                            type="password" 
+                            id="password" placeholder="Password"
+                            )
+                        label(
+                            class="mdl-textfield__label" 
+                            for="password"
+                            ) Password
+                            
+                    div(
+                        class="mdl-card__actions mdl-cell--12-col"
+                        )
+                        //button(
+                            class="mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--raised mdl-button--accent" 
+                            type="button"
+                            ) Sign Up
+                        a(
+                            class="mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--raised mdl-button--colored" 
+                            role="button"
+                            href="search.html"
+                            ) Sign In
+                        button(
+                            type="button"
+                            class="mdl-button mdl-js-button mdl-button--icon f-right"
+                            )
+                            i.material-icons people

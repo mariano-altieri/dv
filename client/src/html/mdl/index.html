@@ -6,24 +6,36 @@
     <title>Login</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="//fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
-    <link href="//cdn.muicss.com/mui-0.1.14/css/mui.min.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="../../statics/styles/mui.css">
+    <link href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.indigo-pink.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../../../statics/styles/mdl.css">
+    <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
+    <link href="//fonts.googleapis.com/css?family=Material+Icons" rel="stylesheet" type="text/css">
   </head>
 </html>
-<header role="banner" class="mui-panel">
-  <h1 class="mui-text-center">Hello world!</h1>
-</header>
-<main class="mui-container"><br>
-  <form role="form" action="#" class="mui-panel">
-    <leyend>Welcome!
-      <div class="mui-form-group">
-        <input type="text" placeholder="User" class="mui-form-control">
-      </div>
-      <div class="mui-form-group">
-        <input type="password" placeholder="Password" class="mui-form-control">
-      </div>
-      <button type="button" onclick="location.href = 'search.html'" class="mui-text-center mui-btn mui-btn-primary mui-btn-lg mui-btn-block">login</button>
-    </leyend>
-  </form>
+<main class="m-login">
+  <div class="mdl-card mdl-card-login mdl-shadow--8dp">
+    <div class="mdl-card__title">
+      <h2 class="mdl-card__title-text">Login</h2>
+    </div>
+    <div class="mdl-card__supporting-text mdl-grid">
+      <form action="#">
+        <div class="mdl-textfield mdl-js-textfield mdl-cell mdl-cell--12-col">
+          <input type="text" id="username" placeholder="Username" class="mdl-textfield__input">
+          <label for="username" class="mdl-textfield__label">Username</label>
+        </div>
+        <div class="mdl-textfield mdl-js-textfield mdl-cell mdl-cell--12-col">
+          <input type="password" id="password" placeholder="Password" class="mdl-textfield__input">
+          <label for="password" class="mdl-textfield__label">Password</label>
+        </div>
+        <div class="mdl-card__actions mdl-cell--12-col">
+          <!--button(
+          class="mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--raised mdl-button--accent" 
+          type="button"
+          ) Sign Up
+          --><a role="button" href="search.html" class="mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--raised mdl-button--colored">Sign In</a>
+          <button type="button" class="mdl-button mdl-js-button mdl-button--icon f-right"><i class="material-icons">people</i></button>
+        </div>
+      </form>
+    </div>
+  </div>
 </main>
