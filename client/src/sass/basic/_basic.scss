@@ -1,3 +1,13 @@
+html {
+    font: {
+        size: $base-font-size;
+        family: $base-font-family;
+        weight: 400;
+    }
+}
+
 body {
-    background-color: $color-primary;
+    background-color: $color-secondary;
+    color: $color-primary;
+    text-align: center;
 }
