@@ -32,3 +32,5 @@ Gemfile.lock
 
 # SASS
 .sass-cache/*
+client/statics/styles/mui.css.map
+prepros.cfg
