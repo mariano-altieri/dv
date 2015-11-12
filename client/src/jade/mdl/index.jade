@@ -3,56 +3,61 @@ extends docwrapper
 block title
     | #{PageTitle}
 
-block content
-    
-    main.m-login
+block body
+    body.p-dashboard
 
-        div(
-            class="mdl-card mdl-card-login mdl-shadow--8dp"
+        block content
+        
+        video(
+            height="100%" 
+            poster="http://il7.picdn.net/shutterstock/videos/3021262/thumb/1.jpg"
+            autoplay="" 
+            loop="" src="http://ak7.picdn.net/shutterstock/videos/3021262/preview/stock-footage-mountain-forest-hd.mp4"
             )
-            div.mdl-card__title
-                h2.mdl-card__title-text Login
-            
-            div(
-                class="mdl-card__supporting-text mdl-grid"
+            source(
+                type="video/mp4" src="http://ak7.picdn.net/shutterstock/videos/3021262/preview/stock-footage-mountain-forest-hd.mp4"
                 )
-                form(action="#")
-                    div(
-                        class="mdl-textfield mdl-js-textfield mdl-cell mdl-cell--12-col"
-                        )
-                        input.mdl-textfield__input(
-                            type="text" 
-                            id="username" 
-                            placeholder="Username"
-                            )
-                        label.mdl-textfield__label(
-                            for="username"
-                            ) Username
-                    div(
-                        class="mdl-textfield mdl-js-textfield mdl-cell mdl-cell--12-col"
-                        )
-                        input.mdl-textfield__input(
-                            type="password" 
-                            id="password" placeholder="Password"
-                            )
-                        label.mdl-textfield__label(
-                            for="password"
-                            ) Password
-                            
-                    div(
-                        class="mdl-card__actions mdl-cell--12-col"
-                        )
-                        //button(
-                            class="mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--raised mdl-button--accent" 
-                            type="button"
-                            ) Sign Up
-                        a(
-                            class="mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--raised mdl-button--colored" 
-                            role="button"
-                            href="search.html"
-                            ) Sign In
-                        button(
-                            type="button"
-                            class="mdl-button mdl-js-button mdl-button--icon f-right"
-                            )
-                            i.material-icons people
+            source(
+                type="video/webm" src="http://ak7.picdn.net/shutterstock/videos/3021262/preview/stock-footage-mountain-forest-hd.webm"
+                )
+        
+        main.m-login
+
+            .mdl-card.mdl-card-login.mdl-shadow--8dp
+                .mdl-card__title
+                    h2.mdl-card__title-text Login
+                
+                .mdl-card__supporting-text.mdl-grid
+                    form
+                        .mdl-textfield.mdl-js-textfield.mdl-cell.mdl-cell--12-col
+                            input.mdl-textfield__input(
+                                type="text" 
+                                id="username" 
+                                placeholder="Username"
+                                )
+                            label.mdl-textfield__label(
+                                for="username"
+                                ) Username
+                        .mdl-textfield.mdl-js-textfield.mdl-cell.mdl-cell--12-col
+                            input.mdl-textfield__input(
+                                type="password" 
+                                id="password" placeholder="Password"
+                                )
+                            label.mdl-textfield__label(
+                                for="password"
+                                ) Password
+                                
+                        .mdl-card__actions.mdl-cell--12-col
+                            //button(
+                                class="mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--raised mdl-button--accent" 
+                                type="button"
+                                ) Sign Up
+                            a.mdl-button.mdl-js-ripple-effect.mdl-js-button.mdl-button--raised.mdl-button--colored(
+                                role="button"
+                                href="dashboard.html"
+                                ) Sign In
+                            button(
+                                type="button"
+                                class="mdl-button mdl-js-button mdl-button--icon f-right"
+                                )
+                                i.material-icons people

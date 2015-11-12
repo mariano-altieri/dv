@@ -1,0 +1,83 @@
+extends docwrapper
+
+block title
+    | #{PageTitle}
+
+block body
+    body.p-dashboard
+
+    block content
+
+    .mdl-layout.mdl-js-layout.mdl-layout--fixed-header
+        header.mdl-layout__header.mdl-layout__header--transparent.mdl-layout__header--waterfall
+            .mdl-layout__header-row
+            
+                <!-- Title -->
+                span.mdl-layout-title Dashboard
+                
+                <!-- Add spacer, to align navigation to the right -->
+                .mdl-layout-spacer
+                
+                <!-- Search -->
+                a(
+                    class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect"
+                    type="button"
+                    href="search.html"
+                    )
+                    i.material-icons search
+        
+        .mdl-layout__drawer
+            span.mdl-layout-title Menu
+            nav.mdl-navigation
+                a(
+                    class="mdl-navigation__link" 
+                    href="index.html"
+                    ) Login
+                a(
+                    class="mdl-navigation__link" 
+                    href="Dashboard.html"
+                    ) Dashboard
+                a(
+                    class="mdl-navigation__link" 
+                    href="Search.html"
+                    ) Search
+            
+        main.mdl-layout__content
+
+            .mdl-grid
+            
+                .mdl-cell.mdl-card.mdl-card-dash.mdl-shadow--2dp
+                    .mdl-card__title.i-01
+                        h2.mdl-card__title-text Paris
+                    .mdl-card__supporting-text.post-excerpt Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia...
+                    
+                    .mdl-card__menu
+                        button(
+                            class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect"
+                            type="button"
+                            )
+                            i.material-icons share
+                
+                .mdl-cell.mdl-card.mdl-card-dash.mdl-shadow--2dp
+                    .mdl-card__title.i-02
+                        h2.mdl-card__title-text Argentine
+                    .mdl-card__supporting-text.post-excerpt Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia...
+                
+                    .mdl-card__menu
+                        button(
+                            class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect"
+                            type="button"
+                            )
+                            i.material-icons share
+                            
+                .mdl-cell.mdl-card.mdl-card-dash.mdl-shadow--2dp
+                    .mdl-card__title.i-03
+                        h2.mdl-card__title-text Rome
+                    .mdl-card__supporting-text.post-excerpt Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia...
+                        
+                    .mdl-card__menu
+                        button(
+                            class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect"
+                            type="button"
+                            )
+                            i.material-icons share
