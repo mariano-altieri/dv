@@ -1,0 +1,28 @@
+extends docwrapper
+
+block title
+    | #{PageTitle}
+
+block body
+    body.p-search
+
+    block content
+
+    .mdl-layout.mdl-js-layout.mdl-layout--fixed-header
+        header.mdl-layout__header.mdl-layout__header--transparent.mdl-layout__header--waterfall
+            a(
+                class="mdl-layout__drawer-button"
+                type="button"
+                href="dashboard.html"
+                )
+                i.material-icons chevron_left
+                
+            .mdl-layout__header-row
+                    
+                <!-- Title -->
+                span.mdl-layout-title Search
+                
+                <!-- Add spacer, to align navigation to the right -->
+                .mdl-layout-spacer
+            
+        main.mdl-layout__content

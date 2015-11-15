@@ -1,0 +1,45 @@
+
+.f-left {
+  float: left; }
+
+
+.f-right {
+  float: right; }
+
+body {
+  background: #686F98 url("https://unsplash.it/320/?blur") center/cover; }
+  body.p-login {
+    background: #686F98 url("https://unsplash.it/322/?blur") center/cover; }
+
+video {
+  position: fixed !important; }
+
+.m-login {
+  padding-top: 10px; }
+
+.mdl-card {
+  margin-left: auto;
+  margin-right: auto; }
+  .mdl-card .mdl-card__title {
+    color: #fff; }
+
+.mdl-card-login {
+  max-width: 300px;
+  background-color: transparent; }
+  .mdl-card-login > .mdl-card__supporting-text {
+    background-color: #fff;
+    border-top: 2px solid #3F51B5;
+    border-radius: 0 0 5px 5px;
+    padding: 15px; }
+
+.mdl-card-dash .mdl-card__title {
+  height: 176px; }
+  .mdl-card-dash .mdl-card__title.i-01 {
+    background: url("https://unsplash.it/200/200?image=115") center/cover; }
+  .mdl-card-dash .mdl-card__title.i-02 {
+    background: url("https://unsplash.it/200/200?image=112") center/cover; }
+  .mdl-card-dash .mdl-card__title.i-03 {
+    background: url("https://unsplash.it/200/200?image=111") center/cover; }
+
+.mdl-card__menu {
+  color: #fff; }

@@ -1,0 +1,18 @@
+body {
+  background: #5C6BC0;
+}
+
+.mdl-card {
+  margin-top: 40px;
+  margin-left: auto;
+  margin-bottom: 40px;
+  margin-right: auto;
+}
+
+.mdl-card-login > .mdl-card__title {
+  color: #fff;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: #3F51B5;
+  margin: 300px;
+}
