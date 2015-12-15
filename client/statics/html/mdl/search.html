@@ -14,10 +14,41 @@
 </html>
 <body class="p-search"></body>
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-  <header class="mdl-layout__header mdl-layout__header--transparent mdl-layout__header--waterfall"><a type="button" href="dashboard.html" class="mdl-layout__drawer-button"><i class="material-icons">chevron_left</i></a>
-    <div class="mdl-layout__header-row"><!-- Title --><span class="mdl-layout-title">Search</span><!-- Add spacer, to align navigation to the right -->
-      <div class="mdl-layout-spacer"></div>
+  <header class="mdl-layout__header mdl-layout__header--transparent">
+    <div class="mdl-layout__header-row">
+      <form action="#">
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+          <div class="mdl-textfield__expandable-holder">
+            <input id="search" type="text" class="mdl-textfield__input">
+            <label for="sample-expandable" class="mdl-textfield__label">Expandable Input</label>
+          </div>
+          <label for="search" class="mdl-button mdl-js-button mdl-button--icon"><i class="material-icons">search</i></label>
+        </div>
+      </form>
     </div>
   </header>
-  <main class="mdl-layout__content"></main>
+  <main class="mdl-layout__content">
+    <div class="mdl-grid">
+      <div class="mdl-cell mdl-card mdl-card-list mdl-shadow--2dp">
+        <div class="mdl-card__title i-01">
+          <h2 class="mdl-card__title-text mdl-button--colored">Hotel 1</h2>
+        </div>
+        <div class="mdl-card__supporting-text post-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia...</div>
+        <div class="mdl-card__actions mdl-card--border"><a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">more Info</a></div>
+        <div class="mdl-card__menu">
+          <button type="button" class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect"><i class="material-icons">share</i></button>
+        </div>
+      </div>
+      <div class="mdl-cell mdl-card mdl-card-list mdl-shadow--2dp">
+        <div class="mdl-card__title i-02">
+          <h2 class="mdl-card__title-text mdl-button--colored">Hotel 2</h2>
+        </div>
+        <div class="mdl-card__supporting-text post-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia...</div>
+        <div class="mdl-card__actions mdl-card--border"><a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">more Info</a></div>
+        <div class="mdl-card__menu">
+          <button type="button" class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect"><i class="material-icons">share</i></button>
+        </div>
+      </div>
+    </div>
+  </main>
 </div>
